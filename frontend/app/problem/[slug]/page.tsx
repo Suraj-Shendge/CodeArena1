@@ -1,4 +1,4 @@
-import { problems } from "@/lib/problems"
+import { problems } from "../../../lib/problems"
 
 export default function ProblemPage({ params }: any) {
 
