@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { problems } from "../../lib/problems"
+import { problems } from "../../lib/problems" 
 
 export default function ProblemsPage() {
   return (
