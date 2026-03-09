@@ -1,4 +1,4 @@
-import { problems } from "../../lib/problems"
+import { problems } from "../../lib/problems" 
 export default function Home() {
   return (
     <main style={{padding:40,fontFamily:"sans-serif"}}>
