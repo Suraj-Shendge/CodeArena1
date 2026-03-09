@@ -1,10 +1,7 @@
-const problems = [
-  { id: 1, title: "Two Sum", difficulty: "Easy" },
-  { id: 2, title: "Binary Tree Paths", difficulty: "Medium" },
-  { id: 3, title: "Merge K Sorted Lists", difficulty: "Hard" }
-]
+import Link from "next/link"
+import { problems } from "@/lib/problems"
 
-export default function Problems() {
+export default function ProblemsPage() {
   return (
     <main style={{ padding: 40 }}>
       <h1>Problems</h1>
@@ -18,7 +15,9 @@ export default function Problems() {
               borderBottom: "1px solid #333"
             }}
           >
-            {p.title} — {p.difficulty}
+            <Link href={`/problem/${p.slug}`}>
+              {p.title} — {p.difficulty}
+            </Link>
           </div>
         ))}
       </div>
